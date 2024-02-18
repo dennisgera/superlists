@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "superlists"
+version = "0.1.0"
+description = ""
+authors = ["Dennis Gera <geradennis@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0.2"
+selenium = "^4.17.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
