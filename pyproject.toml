@@ -10,6 +10,7 @@ python = "^3.11"
 django = "^5.0.2"
 selenium = "^4.17.2"
 gunicorn = "^21.2.0"
+fabric3 = "^1.14.post1"
 
 
 [build-system]
