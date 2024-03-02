@@ -11,11 +11,9 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 import os
-from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 
 
 # Quick-start development settings - unsuitable for production
@@ -27,8 +25,10 @@ SECRET_KEY = 'django-insecure-v_0)yv5#5$eoio2zzy9j*76ar4z&(sd$j&3i2pb0q*9l2@ojk3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['140.82.31.60', 'localhost']
-CSRF_TRUSTED_ORIGINS = ['http://140.82.31.60']
+APP_NAME = os.environ.get("FLY_APP_NAME")
+
+ALLOWED_HOSTS = [f"{APP_NAME}.fly.dev"]  
+CSRF_TRUSTED_ORIGINS = []
 
 # Application definition
 

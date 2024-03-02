@@ -1,3 +1,7 @@
 .python-version
 
 superlists/db.sqlite3
+
+fly.toml
+
+Dockerfile
